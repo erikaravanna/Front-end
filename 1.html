@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    @media screen and (min-width: 500px) {
+        
+    body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.header .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .search-bar {
+    width: 200px;
+    padding: 5px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #e9ecef;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.content .box {
+    width: calc(33% - 40px);
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    position: sticky;
+    bottom: 0;
+}
+    }
