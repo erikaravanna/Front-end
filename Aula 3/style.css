@@ -1,0 +1,56 @@
+
+.container {
+    background-color: antiquewhite;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 20% 1fr;
+    grid-template-rows: repeat(3, 100px);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+
+}
+
+.item {
+    padding: 20px;
+    font-size:20px;
+    font-family: sans-serif;
+    color: white;
+
+&.A1 {
+    background-color: yellow;
+    grid-row-start: 3;
+    grid-column-start: 3;
+}
+
+&.A2 {
+    background-color: blue;
+}
+&.A3 {
+    background-color: green;
+}
+&.A4 {
+    background-color: rgb(43, 226, 52);
+}
+&.A5 {
+    background-color: blueviolet;
+    grid-row-start: 3;
+    grid-column-start: 3;
+}
+&.A6 {
+    background-color: rgb(51, 32, 32);
+}
+&.A7 {
+    background-color: rgb(50, 7, 90);
+    grid-area: 1 / 2 / 3 / 4;
+}
+&.A8 {
+    background-color: rgb(226, 43, 73);
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+}
+&.A9 {
+    background-color: rgb(43, 226, 180);
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+}
